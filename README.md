@@ -1,3 +1,7 @@
 # dhFullStackProjeto
-Projeto do curso desenvolvimento web fullstack da digital house.
-Porjeto Sites de Bebidas 
+<<<<<<< HEAD
+Projeto do curso desenvolvimento web fullstack Node da digital house.
+Projeto Sites de Bebidas 
+=======
+ projetoIntegrador
+>>>>>>> 2832ebd (Initial commit)
