@@ -8,13 +8,15 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap">
+
 </head>
 <body>
     <section class="header ">
         <nav>
             <a href="index.html">página principal< img src=".\assets\img\logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu"></i>
                 <ul>
                     <li><a href="">Produtos</a></li>
                     <li><a href="">Pacotes</a></li>
@@ -23,7 +25,9 @@
                     <li><a href="">Cadastre-se</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu"></i>
         </nav>
+
         <div class ="text-box">
             <h1>Bebida</h1>
             <p>
@@ -35,12 +39,65 @@
 
         </div>
 
-
-
-
-
-
     </section>
+    
+<!---------------------------------Produtos----------------------------------------------->
+
+<section class="Produtos">
+    <h1> Product We Offer </h1>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate, nisi eos tempore recusandae officia! Veritatis sunt, delectus quae saepe, a earum molestias eligendi officiis temporibus voluptatum voluptas ipsum soluta.</p>
+
+<div class="row">
+<div class="produto-col">
+    <h3>Produto 1</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ad ratione sed dolor debitis impedit porro minus beatae deleniti ea, libero repudiandae eum, ex et reiciendis totam! Nostrum, tempora. Repellat.</p> 
+</div>
+
+<div class="produto-col">
+    <h3>Produto 2</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ad ratione sed dolor debitis impedit porro minus beatae deleniti ea, libero repudiandae eum, ex et reiciendis totam! Nostrum, tempora. Repellat.</p> 
+</div>
+
+<div class="produto-col">
+    <h3>Produto 3</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ad ratione sed dolor debitis impedit porro minus beatae deleniti ea, libero repudiandae eum, ex et reiciendis totam! Nostrum, tempora. Repellat.</p> 
+</div>
+
+<div class="produto-col">
+    <h3>Produto 4</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ad ratione sed dolor debitis impedit porro minus beatae deleniti ea, libero repudiandae eum, ex et reiciendis totam! Nostrum, tempora. Repellat.</p> 
+</div>
+
+</section>
+
+
+<!-------------------------->
+<section>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-------------------JavaScript para Menu ---------------------------------------------->
+<script>
+     var navLinks = document.getElementById("navLinks");
+          function  showMenu(){
+         navLinks.style.right = "0";
+     }
+     function  hideMenu(){
+         navLinks.style.right = "-200px";
+     }
+
+</script>
 
     
 </body>
