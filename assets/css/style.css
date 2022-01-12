@@ -130,14 +130,14 @@ nav .fa{
 /*-------------------------------Produtos-----------------------------*/
 
 .Produtos{
-width: 80%;
+width: auto;
 margin: auto;
 text-align: center;
-padding-top: 100px;
+padding-top: 600px;
 }
 
 h1{
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 600;
 }
 
@@ -150,7 +150,7 @@ p{
 }
 
 .row{
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -159,15 +159,34 @@ p{
     background: #fff3ff;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding:  20px 12px;
+    padding:  10px 12px;
     box-sizing: border-box;
     transition: 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+.produto-col img{
+    width: 95%;
+}
+
+.layer{
+    background: transparent;
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background:rgba(226,0,0,0.7); ;
 }
 
 h3{
 text-align: center;
 font-weight:600;
-margin: 10px 0;
+margin: 12px 0;
 }
 
 .produto-col:hover{
@@ -179,4 +198,51 @@ margin: 10px 0;
     }
 }
 
+/*--------imagem dos produto----------------------*/
+.imgproduto{
+    width: 45%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
 
+.imgproduto-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.imgproduto-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
